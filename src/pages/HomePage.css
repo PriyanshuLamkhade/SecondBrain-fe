@@ -1,0 +1,116 @@
+#moving1{
+    background:radial-gradient(rgba(158, 227, 250, 0.77),rgba(142, 223, 250, 0.847));
+    height: 4vmax;
+    width: 4vmax;
+    border-radius: 100%;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    animation-name: updown;
+    animation-duration: 1.1s;
+    
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    
+}
+
+
+@keyframes updown {
+    from{
+        top: 20%;
+        opacity: 1;
+
+    }
+    to{
+        top: 14%;
+        opacity: 0;
+    }
+}
+#moving2{
+    background:radial-gradient(rgba(218, 158, 250, 0.77),rgba(236, 142, 250, 0.847));
+    height: 3vmax;
+    width: 3vmax;
+    border-radius: 100%;
+    position: absolute;
+    top: 70%;
+    left: 16%;
+    animation-name: sideway;
+    animation-duration: 2s;
+    
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    
+}
+
+@keyframes sideway {
+    from{
+        left: 16%;
+        opacity: 1;
+
+    }
+    to{
+        left: 10%;
+        opacity: 0;
+    }
+}
+
+#moving3{
+    background:radial-gradient(rgba(176, 250, 158, 0.801),rgba(142, 250, 160, 0.847));
+    height: 4vmax;
+    width: 4vmax;
+    border-radius: 100%;
+    position: absolute;
+    top: 45%;
+    right: 16%;
+    animation-name: sideway2;
+    animation-duration: 0.9s;
+    
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    
+}
+
+@keyframes sideway2 {
+    from{
+        right: 16%;
+        opacity: 1;
+
+    }
+    to{
+        right: 10%;
+        opacity: 0;
+    }
+}
+
+#square1{
+    background:linear-gradient(190deg,rgba(245, 50, 108, 0.893),rgb(255, 137, 172),rgb(255, 197, 214));
+    height: 4vmax;
+    width: 4vmax;
+    border-radius: 20%;
+   
+    position: absolute;
+    top: 35%;
+    left: 8%;
+
+}
+#square2{
+    background:linear-gradient(190deg,rgba(50, 167, 245, 0.893),rgb(137, 239, 255),rgb(161, 232, 254));
+    height: 4vmax;
+    width: 4vmax;
+    border-radius: 20%;
+   
+    position: absolute;
+    top: 80%;
+    right: 8%;
+}
+
+#circle1{
+    background:linear-gradient(190deg,rgba(207, 172, 245, 0.893),rgb(198, 112, 194),rgb(233, 141, 242));
+    height: 3.2vmax;
+    width: 3.2vmax;
+    border-radius: 100%;
+   
+    position: absolute;
+    top: 18%;
+    right: 23%;
+}
