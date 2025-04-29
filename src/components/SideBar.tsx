@@ -2,13 +2,14 @@ import { BrainIcon } from "../Icons/BrainIcon"
 import { DocumentIcon } from "../Icons/DocumentIcon"
 import { LinkIcon } from "../Icons/LinkIcon"
 import { HashTagIcon } from "../Icons/TagIcon"
-
+import { useNavigate } from "react-router-dom"
 import { XIcon } from "../Icons/XIcon"
 import { YoutubeIcon } from "../Icons/YoutubeIcon"
 import { SideIcons } from "./ui/SideIcons"
 
 
 export const SideBar = (porps:any) => {
+    const navigate = useNavigate()
     return <div className="h-full border-r pt-10  border-slate-400   sm:mb-3 flex flex-col   font-semibold items-center ">
         <div className="flex flex-wrap gap-2 text-3xl">
             <BrainIcon size="lg" />
@@ -26,8 +27,15 @@ export const SideBar = (porps:any) => {
 
 
         </div>
+        
 
-        <button className="bg-red-500 p-3 rounded-lg mt-10 ml-3 self-start hover:bg-red-400  ">
+        <button className="bg-red-500 p-3 rounded-lg mt-10 ml-3 self-start hover:bg-red-400  "
+        onClick={
+            ()=>{
+                localStorage.removeItem('token')
+                navigate("/")
+            }
+        }>
             Log Out
         </button>
     </div>

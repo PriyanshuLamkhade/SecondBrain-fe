@@ -3,6 +3,7 @@ import { BrainIcon } from "../Icons/BrainIcon";
 import "./HomePage.css"
 import { useNavigate } from "react-router-dom"
 
+
 export function HomePage() {
     const navigate = useNavigate()
     return <div className="bg-slate-200 w-full flex flex-col items-center">

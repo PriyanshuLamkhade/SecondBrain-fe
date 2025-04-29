@@ -27,7 +27,8 @@ const defaultStyles="rounded-md flex items-center"
 
 export const Button=(props:ButtonProps)=>{
     return <button onClick={props.onClick} className={`${varientStyles[props.varient]} ${sizeStyles[props.size]} ${defaultStyles} 
-    ${props.fullWidth && ' w-full flex justify-center items-center'} ${props.loading ? "opacity-45 " :" " }`} disabled={props.loading}>
+    ${props.fullWidth && ' w-full flex justify-center items-center'} ${props.loading ? "opacity-45 " :" " }`} 
+    disabled={props.loading}>
     {props.startIcon ? <div className="pr-2  ">{props.startIcon}</div> : null} {props.text} {props.endIcon}
     </button>
 }   

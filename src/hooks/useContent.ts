@@ -4,7 +4,7 @@ import { BACKEND_URL } from "../config";
 
 
 
-export function useContent(props:string){
+export function useContent(props: string){
     console.log("inside the state:"+props)
     const [contents,setContents] = useState([]);
     useEffect(()=>{
